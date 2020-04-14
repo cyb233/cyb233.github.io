@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
+  <script language="javascript"> 
+//平台、设备和操作系统  
+var system ={  
+win : false,  
+mac : false,  
+xll : false  
+};  
+//检测平台  
+var p = navigator.platform;  
+system.win = p.indexOf("Win") == 0;  
+system.mac = p.indexOf("Mac") == 0;  
+system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);  
+//跳转语句，如果是电脑访问就自动跳转  
+if(system.win||system.mac||system.xll){  
+window.location.href="https://cyb233.github.io/pcr6";  
+}else{  
+}  
+</script>
   <meta http-equiv="Cache-Control" content="no-cache" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fd42904bc504a6f81dd2be5444ffdea8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 
 <body>
-  <div align="center"><h1><span id="number">3</span>秒后自动跳转，或<a href="https://jq.qq.com/?_wv=1027&k=5q4QM61">点击此处</a>立刻跳转</h1></div>
+  <div align="center"><h1><span id="number">3</span>秒后自动跳转，或<a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=810057916&card_type=group&source=qrcode">点击此处</a>立刻跳转</h1></div>
+  <div align="center"><h2>如安卓Chrome等跳转异常，直接点击链接即可</h2></div>
+  <div align="center"><h2>如点击没反应，长按复制<a href="https://jq.qq.com/?_wv=1027&k=5q4QM61">此链接</a>在QQ中打开</h2></div>
   <script>
     function countdown() {
       var number = document.getElementById('number')
@@ -16,7 +45,7 @@
       if(value>1){
         number.textContent = value - 1
       }else{
-        window.location.href='https://jq.qq.com/?_wv=1027&k=5q4QM61';
+        window.location.href='mqqapi://card/show_pslcard?src_type=internal&version=1&uin=810057916&card_type=group&source=qrcode';
       }
       
     }
