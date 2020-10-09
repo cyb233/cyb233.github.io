@@ -1,6 +1,6 @@
 # [cyb233.github.io](https://cyb233.github.io/index.html)/[cyb233.gitee.io](https://cyb233.gitee.io/index.html)
 
->广告时间： [布丁网络加速](http://pudy.xyz)
+>广告时间：
 
 Adam·Eva的三合一[收款码GitHub](https://cyb233.github.io/index.html)/[收款码Gitee](https://cyb233.gitee.io/index.html)
 
