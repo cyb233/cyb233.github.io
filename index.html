@@ -145,15 +145,15 @@ var _hmt = _hmt || [];
         window.location.href = setting.aliUrl; 
     } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
         // 微信
-        document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
+        document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl) + "&bgcolor=54b4ef";
         document.getElementById("code-wechat").style.display = "block";
     } else if(navigator.userAgent.match(/QQ\//i)) {
         // QQ
-        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
+        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl) + "&bgcolor=54bc6e";
         document.getElementById("code-qq").style.display = "block";
     } else {
         // 其它，显示“收款码”
-        document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
+        document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href) + "&bgcolor=5c92ef";
         document.getElementById("code-all").style.display = "block";
     }
     
